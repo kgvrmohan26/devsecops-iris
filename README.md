@@ -1,6 +1,6 @@
 # Dev-Sec-Ops Demo/Assignment
 
-[![codecov](https://app.codecov.io/gh/kgvrmohan26/devsecops-iris/branch/master/graph/badge.svg?token=EILEH8L7R5)](https://app.codecov.io/gh/kgvrmohan26/devsecops-iris)
+[![codecov](https://app.codecov.io/gh/kgvrmohan26/devsecops-iris/branch/master/graph/badge.svg?token=a014b3f9-b0b6-4935-a1de-0543b0fe62cd)](https://app.codecov.io/gh/kgvrmohan26/devsecops-iris)
 
 This repository contains code which demonstrates Dev-Sec-Ops using a `FastAPI` application which predicts the flower class using the IRIS dataset (https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html).
 
