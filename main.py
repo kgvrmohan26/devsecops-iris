@@ -30,7 +30,7 @@ class FeedbackIn(BaseModel):
     sepal_width: float
     petal_length: float
     petal_width: float
-    flower_class: str
+    flower_class: str='Iris Setosa'
 
 
 # Route definitions
