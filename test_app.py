@@ -27,16 +27,12 @@ def test_pred_virginica():
 
 # test to check if Iris Virginica is classified correctly
 def test_retrain():
-    # defining a sample payload for the testcase
-    payload = {
-        "sepal_length": 0,
-        "sepal_width": 0,
-        "petal_length": 0,
-        "petal_width": 0,
-        "flower_class": 'Iris Setosa'
-    }
+    # defining a sample payload fo type list for the testcase
+    payload: list= [{"sepal_length": 3,"sepal_width": 5,"petal_length": 3.2,"petal_width": 4.4,"flower_class": 'Iris Virginica'}]
     with TestClient(app) as client:
         response = client.post("/feedback_loop", json=payload)
+        #print (payload)
+        #print (response.json())
         # asserting the correct response is received
-        #assert response.status_code == 200
-        #assert response.json() == {"flower_class": "Iris Virginica"}
+        assert response.status_code == 200
+        assert response.json() == {"detail": "Feedback loop successful"}
